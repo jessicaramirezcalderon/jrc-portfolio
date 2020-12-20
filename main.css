@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+/*Main Styles/Utilities*/
+
+body { 
+    background: url(assets/images/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.light-txt {
+      color: white;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover,{
+      color: cadetblue;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .top-nav {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 30px;
+    background: white;
+    font-weight: 100;
+    height: 60px;
+  }
+
+  .nav-link {
+      color: black;
+  }
+
+  main { 
+      padding: 10px;
+      margin: 70px auto;
+    
+  }
+
+  .main-container {
+
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+  }
+
+  /*Index/About Me Page*/
+
+  .lead-1 img {
+      border-radius: 5px;
+  }
+
+  .skills-block {
+      margin-bottom: 15px;
+  }
+
+  .skills-block .card {
+    height: 100%;
+  }
+
+.lead-1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1;
+
+}
+.card-text {
+    color: black;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.sub-hed {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: overline;
+
+}
+
+
+/*Portfolio Page*/
+
+.project-block {
+    background-color: white;
+    margin: 10px 0;
+    height: 300px;
+    line-height: 435px;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    text-align: center;
+    background-image: url("assets/images/p-bg.jpg"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.project-block button {
+    font-size: 25px;
+}
+
+/*Contact Page*/
+.contact-info {
+    text-align: center;
+    width: 100%;
+    font-size: 5vw;
+    line-height: 3;
+}
+
+.contact-info ul li {
+    transition: all .2s ease-in-out;
+}
+
+
+.contact-info ul li:hover{
+
+        transform: scale(1.5);
+}
+
+
+/*Footer*/
+footer {
+    padding: 10px;
+    margin: 30px 0 0;
+    font-family: 'Quicksand', sans-serif;
+    background: white;
+    font-size: 16px;
+  
+}
+
+/*Responsive*/
+  @media screen and (min-width: 768px) {
+
+    main {
+        max-width: 70%;
+    }
+    .top-nav {
+        font-size: 40px;
+    }
+
+    .top-nav li {
+        margin: 0 20px;
+        line-height: 1;
+    }
+
+    .lead-1 {
+        max-height: 400px;
+    }
+  
+    .project-block {
+        margin: 10px;
+    }
+
+    .contact-info {
+        width: 60%;
+        font-size: 2vw; 
+    }
+
+
+  }
+  /*end of query*/
